@@ -6,9 +6,7 @@ filelock==3.12.2
 pexpect==4.8.0
 platformdirs==3.10.0
 postgres==4.0
-psycopg2==2.9.7
 psycopg2-binary==2.9.7
-psycopg2-pool==1.1
 ptyprocess==0.7.0
 sqlparse==0.4.4
 typing_extensions==4.7.1
