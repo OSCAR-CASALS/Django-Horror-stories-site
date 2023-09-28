@@ -1,0 +1,15 @@
+.mainest_main {
+    text-align: center;
+    color: white;
+    width: 80%;
+
+    margin: auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: black;
+}
+
+.backImg {
+    background-image: url();
+    
+}
