@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a@pni5!+f@o@z@0#u8*-oj^3)gifn*7b2doiy8j4#&f%z3($g)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://horrorstories-ib0bk3aza-oscar-casals-morros-projects.vercel.app/']
+ALLOWED_HOSTS = ['horrorstories-k5j6c8wic-oscar-casals-morros-projects.vercel.app']
 
 
 # Application definition
@@ -91,7 +91,7 @@ DATABASES = {
         'NAME': 'horror_stories',#database name
         'USER': 'luckysuperior',#projectuser
         'PASSWORD': 'Lucky123',#password
-        'HOST': 'https://horrorstories-ib0bk3aza-oscar-casals-morros-projects.vercel.app/',
+        'HOST': 'horrorstories-k5j6c8wic-oscar-casals-morros-projects.vercel.app',
         'PORT': '5432',
     }
 }
