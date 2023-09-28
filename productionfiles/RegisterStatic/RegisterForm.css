@@ -9,26 +9,7 @@
     background-color: black;
 }
 
-.BackImage {
-    background-image: url(https://cdn.pixabay.com/photo/2015/01/29/02/15/dark-615606_1280.jpg);
-    background-size: cover;
-    background-position: center center;
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;    
-    background-repeat: no-repeat;
-}
-
-h2{
-    color: red;
-}
-
-.LastBackg {
-    background-image: url(https://cdn.pixabay.com/photo/2017/10/13/14/15/fantasy-2847724_1280.jpg);
-    background-size: cover;
-    background-position: center center;
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;    
-    background-repeat: no-repeat;
+.backImg {
+    background-image: url();
+    
 }
