@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lan="en" class="backg">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'LogIn/LogPage.css' %}">
+    </head>
+    <body>
+        <div class="Main">
+            <h1>Welcome {{FirstName}} {{LastName}}!!!</h1>
+            <form action="{% url 'LogInPage' %}">
+                <button type="submit" name="LoggedOut">LogOut</button>
+            </form>
+            <br>
+            <form action="{% url 'results' %}">
+                <input type="text" name="searchbox" placeholder="Search for a story or user" required> <button type="submit">Search</button>
+            </form>
+        </div>
+        <br>
+        <form action="PublishStory">
+            <div class="center">
+                <button type="submit" class="WhiteButton">
+                    <h2>Publish Story</h2>
+                </button>
+            </div>
+        </form>
+        <br>
+        <div class="Main">
+            <h2>Liked stories</h2>
+            <form action="{% url 'Read' %}">
+                <ul>
+                    {% for title in likedStories %}
+                        <li>
+                            <button type="submit" class="WhiteButton" name="SelectedStory" value="{{title}}"><h3>{{title}}</h3></button>
+                        </li>
+                        <br>
+                    {% endfor %}
+                </ul>
+            </form>
+        </div>
+        <br>
+        <div class="Main">
+            <h2>Published stories</h2>
+            <form action="{% url 'Read' %}">
+                <ul>
+                    {% for story in PublishedStories %}
+                        <li>
+                            <button type="submit" class="WhiteButton" name="SelectedStory" value="{{story.title_and_user}}">
+                                <h3>{{story.title_and_user}}</h3>
+                                <p>{{story.pub_date}}</p>
+                                <p><img src="https://www.goodfreephotos.com/albums/vector-images/thumbs-up-vector-art.png" width=20 height=20> {{story.likes}} <img class="rotate" src="https://www.goodfreephotos.com/albums/vector-images/thumbs-up-vector-art.png" width=20 height=20> {{story.dislikes}}</p>
+                            </button>
+                        </li>
+                        <br>
+                    {% endfor %}
+                </ul>
+            </form>
+        </div>
+    </body>
+</html>

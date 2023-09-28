@@ -1,0 +1,86 @@
+.mainest_main {
+    text-align: center;
+    color: white;
+    width: 80%;
+
+    margin: auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: black;
+}
+
+.backgImage {
+    background-image: url(https://cdn.pixabay.com/photo/2022/06/09/22/40/forest-7253415_1280.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;    
+    background-repeat: no-repeat;
+}
+
+.mainest_main h2 {
+    color: red;
+}
+
+.backg {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.Main {
+    background-color: black;
+    border-color: red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: white;
+    border-width: thick;
+    border-style: solid;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.WhiteButton {
+    width: 80%;
+    background-color: white;
+    border-width: 0;
+}
+
+.WhiteButton:hover {
+    background-color: red;
+}
+
+.center {
+    text-align: center;
+}
+
+.pImage {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.sameLineForm {
+    display: inline;
+}
+
+textarea {
+    white-space: pre-wrap;
+}
+
+.Torax {
+    background-image: url(https://i.pinimg.com/564x/e6/0c/ef/e60cef96afadf5a1b38c6884a955f990.jpg);
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center center;
+}

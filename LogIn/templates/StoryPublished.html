@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lan="en"  class="Torax">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'LogIn/LogPage.css' %}">
+    </head>
+    <body>
+        <br>
+        <div class="mainest_main">
+            <h1>{{Title}} published</h1>
+            <form action="{% url 'home' %}">
+                <button type="submit">Back to search bar</button>
+            </form>
+        </div>
+    </body>
+</html>

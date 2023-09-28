@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lan="en" class="pImage">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'LogIn/LogPage.css' %}">
+    </head>
+    <body>
+        <h1>Write your story</h1>
+        <form action="{% url 'Published' %}" method="post">
+            {% csrf_token %}
+            <h3>Title</h3>
+            <input type="text" name="title" required>
+            <br>
+            <h3>Story</h3>
+            <textarea name="StoryToPublish" rows="50" cols="100" required>Write your story here...</textarea>
+            <br>
+            <button type="submit">Publish</button>
+        </form>
+        <br>
+        <form action="{% url 'LogInPage' %}">
+            <button type="submit">Back</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'SearchAndReadApp/style.css' %}">
+</head>
+
+<body class="backgImage">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mainest_main">
+        <h1>Horror stories</h1>
+        <br>
+        <form action="results">
+            <input type="text" name="searchbox" placeholder="Story name or user" required>
+            <br>
+            <br>
+            <br>
+            <button class="eye_but" type="submit" name="Submit_button"><img src="{% static 'SearchAndReadApp/eye.jpg'%}" alt="Search Icon" width=40 /></button>
+        </form>
+        <br>
+        <br>
+        <form action="LogInPage" class="sameLineForm">
+            <button type="submit" name="Log_in">Log In</button></form>
+        <form action="RegistrationPage" class="sameLineForm">
+            <button type="submit" name="Register">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>

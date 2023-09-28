@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lan="en" class="BackImage">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <link rel="stylesheet" href="{% static 'RegisterStatic/RegisterForm.css' %}">
+    </head>
+    <body class="newBackg">
+        <div class ="mainest_main">
+            <form action="{% url 'RegistrationPage' %}" method="post">
+                {% csrf_token %}
+                <h1>Registration Form</h1>
+                <h2>{{MissingForm}}</h2>
+                <h3>First name</h3>
+                <input type="text" name="FirstName" placeholder="Holden" required>
+                <h3>Last name</h3>
+                <input type="text" name="LastName" placeholder="Myhawk" required>
+                <h3>Username</h3>
+                <input type="text" name="Username" placeholder="username" required>
+                <h3>Email</h3>
+                <input type="text" name="email" placeholder="email" required>
+                <h3>Password</h3>
+                <input type="password" name="Password" required>
+                <br>
+                <br>
+                <button type="submit">Register</button>
+            </form>
+            <br>
+            <form action="{% url 'home' %}">
+                <button type="submit">Back</button>
+            </form>
+        </div>
+    </body>
+</html>

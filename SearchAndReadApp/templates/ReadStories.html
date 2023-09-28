@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'SearchAndReadApp/Story.css' %}">
+    </head>
+    <body>
+        <div class="TitlePart">
+            <h2>{{final.title_and_user}}</h2> 
+            <br>
+            <form action="{% url 'results' %}">
+                <button type="submit" name="searchbox" value="{{user}}">More of this user</button>
+                <input type="hidden" name="LikeButton" value="NO">
+                <input type="hidden" name="DisLikeButton" value="NO">
+            </form>
+            <form action="">
+                <input type="hidden" name="SelectedStory" value="{{final.title_and_user}}">
+                <p><button type="submit" name="LikeButton" value="YES"><img src="https://www.goodfreephotos.com/albums/vector-images/thumbs-up-vector-art.png" width="20" height="20"></button> {{final.likes}} <button type="submit" name="DisLikeButton" value="YES"><img src="https://www.goodfreephotos.com/albums/vector-images/thumbs-up-vector-art.png" width="20" height="20" class="rotate"></button> {{final.dislikes}}</p>
+                <h3>{{LoginMessage}}</h3>           
+            </form>
+            <a href="{% url 'home' %}"><strong>Back to main page.</strong></a>
+        </div>
+        <br>
+        <br>
+        <div class="StoryPart">
+            <p>{{final.story|linebreaks}}</p>
+        </div>
+    </body>
+</html>

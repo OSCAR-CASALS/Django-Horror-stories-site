@@ -1,0 +1,46 @@
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2023/01/03/17/01/house-7694835_1280.jpg);
+    background-size: cover;
+}
+
+.TitlePart {
+    color: white;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.placeRight{
+    float: right;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+.StoryPart {
+    color: white;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border-color: red;
+    border-width: 20px;
+}
+
+h2 {
+    display: inline-block;
+}
+
+.rotate{
+    transform: rotate(3.142rad);
+}
+
+h3 {
+    color: red;
+}

@@ -1,0 +1,42 @@
+body{
+    background-image: url(https://i.pinimg.com/564x/f7/7d/bb/f77dbbf5ab771b19ad0cae58d6ff877d.jpg);
+    background-size: cover;
+}
+
+.Center {
+    color: white;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.Center .Bigbutton{
+    width: 80%;
+    border-width: thick;
+    background-color: white;
+    border-color: white;
+}
+
+.Center .Bigbutton:hover{
+    background-color: red;
+}
+
+.rotate{
+    transform: rotate(3.142rad);
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+.Center ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

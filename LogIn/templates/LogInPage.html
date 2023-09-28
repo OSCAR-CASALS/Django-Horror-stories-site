@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="backgImage">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'LogIn/LogPage.css' %}">
+    </head>
+    <body>
+        <div class="mainest_main">
+            <form action="{% url 'LogInPage' %}" method="post">
+                {% csrf_token %}
+                <h1>Log In</h1>
+                <h2>{{IncMessage}}</h2>
+                <h3>Username</h3>
+                <input type="text" name="UserName" required>
+                <h3>Password</h3>
+                <input type="password" name="PassWord" required>
+                <br>
+                <br>
+                <button type="submit">LogIn</button>
+            </form>
+            <br>
+            <form action="{% url 'home' %}">
+                <button type="submit">Back</button>
+            </form>
+        </div>
+    </body>
+</html>

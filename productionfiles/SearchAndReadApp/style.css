@@ -1,0 +1,23 @@
+.backgImage {
+    background-image: url(https://www.mubis.es/media/users/17247/234588/la-chica-de-la-curva-leyenda-l_cover.jpg);
+}
+
+.mainest_main {
+    text-align: center;
+    color: white;
+    width: 80%;
+
+    margin: auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: black;
+}
+
+.eye_but {
+    border: 0;
+    background-color: inherit;
+}
+
+.sameLineForm {
+    display: inline;
+}
