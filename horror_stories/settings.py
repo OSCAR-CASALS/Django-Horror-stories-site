@@ -91,7 +91,7 @@ DATABASES = {
         'NAME': 'horror_stories',#database name
         'USER': 'luckysuperior',#projectuser
         'PASSWORD': 'Lucky123',#password
-        'HOST': 'vercel.app',
+        'HOST': '.vercel.app',
         'PORT': '5432',
     }
 }
