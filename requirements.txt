@@ -5,9 +5,9 @@ Django==4.2.4
 filelock==3.12.2
 pexpect==4.8.0
 platformdirs==3.10.0
+psycopg2-binary==2.9.7
 ptyprocess==0.7.0
 sqlparse==0.4.4
 typing_extensions==4.7.1
 virtualenv==20.24.2
 whitenoise==6.5.0
-psycopg2==2.9.3
