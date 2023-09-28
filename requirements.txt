@@ -1,0 +1,12 @@
+asgiref @ file:///home/conda/feedstock_root/build_artifacts/asgiref_1685243452975/work
+certifi==2023.7.22
+distlib==0.3.7
+Django @ file:///home/conda/feedstock_root/build_artifacts/django_1692790914821/work
+filelock==3.12.2
+pexpect==4.8.0
+platformdirs==3.10.0
+ptyprocess==0.7.0
+sqlparse @ file:///home/conda/feedstock_root/build_artifacts/sqlparse_1681817562700/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1688315532570/work
+virtualenv==20.24.2
+whitenoise @ file:///home/conda/feedstock_root/build_artifacts/whitenoise_1686933972273/work
